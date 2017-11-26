@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Profissional</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <div class="perfil">
+
+      <ion-item>
+        <ion-avatar>
+          <img src="assets/imgs/perfil.png" class="imag-perfil">
+        </ion-avatar>
+      </ion-item>
+      <div class="info-card">
+      <h2>Joana Silva</h2>
+      <p>Cabeleleira Profissional</p>
+
+        <ion-item class="info-card">
+          <h2>Avaliação dos usuários</h2>
+          <ion-rating [numStars]="5" [readOnly]="true" [value]="3.2" (clicked)="starClicked($event)">
+          </ion-rating>
+        </ion-item>
+        <ion-card-content>
+          <p>Certificação concedida pelo instituto Embeleze.</p>
+          <p>Horário de atendimento: Seg. a Sab. 10hs as 20hs </p>
+        </ion-card-content>
+
+      </div>
+    </div>
+    <ion-row>
+      <ion-col>
+        <button ion-button outline (click)="goBack()">Voltar</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="goToAgendaClientePage()">Agendar</button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+</ion-content>
