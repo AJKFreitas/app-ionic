@@ -6,12 +6,68 @@
   </ion-navbar>
 
 </ion-header>
+  <ion-content class="outer-content">
+    
+      <ion-list>
+        <ion-item>
+          <ion-label>Serviço</ion-label>
+          <ion-select [(ngModel)]="Cortedecabelo" interface="Corte de cabelo">
+            <ion-option value="Tintura">Tintura</ion-option>
+            <ion-option value="Idrata">Idratação</ion-option>
+            <ion-option value="Escova">Escova</ion-option>
+            <ion-option value="Mechas">Mechas</ion-option>
+            <ion-option value="Chapinha">Chapinha</ion-option>
+            <ion-option value="Alizamento">Alizamento</ion-option>
+          </ion-select>
+        </ion-item>
+         <ion-item>
+          <ion-input placeholder="Local"></ion-input>
+        </ion-item>
+      </ion-list>
+    
+      <ion-list>
+        <ion-item>
+          <ion-label>Data</ion-label>
+          <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+        </ion-item>
+    
+    
+        <ion-item>
+          <ion-label>Horário</ion-label>
+          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+        </ion-item>
+    
+       
+    
+        <button ion-item>
+          <ion-label>Repeat</ion-label>
+          <ion-note item-end>Never</ion-note>
+        </button>
+    
+        <button ion-item>
+          <ion-label>Travel Time</ion-label>
+          <ion-note item-end>None</ion-note>
+        </button>
+      </ion-list>
+    
+      <ion-list>
+        <ion-row>
+          <ion-col>
+            <button ion-button outline>Voltar</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button >Agendar</button>
+          </ion-col>
+        </ion-row>
+      </ion-list>
 
 
-<ion-content >
-    <ion-item>
-        <ion-label>Marcar</ion-label>
-        <ion-datetime displayFormat="MMMM YYYY" min="2016" max="2020-10-31" [(ngModel)]="myDate">
-        </ion-datetime>
-      </ion-item>
+    <style>
+      ion-list:first-child {
+        margin-top: 32px;
+      }
+      ion-list + ion-list {
+        margin-top: 0;
+      }
+    </style>
 </ion-content>

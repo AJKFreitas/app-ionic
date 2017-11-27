@@ -1,3 +1,31 @@
 page-services {
 
+    ion-card {
+        position: relative;
+        text-align: left;
+        background-color: #a828c2;
+       
+        width: 100%;
+        font-weight: bold;
+        color: #eae4ef;
+        
+      }
+    
+      .card-title {
+        top: 85%;
+        font-size: 1.2em;
+        position: absolute;
+        width: 100%;
+        font-weight: bold;
+        color: #a828c2;
+        background-color: #f7e8fa;
+      }
+    
+      .card-subtitle {
+        font-size: 1.0em;
+        position: absolute;
+        top: 52%;
+        width: 100%;
+        color: #a828c2;
+    }
 }

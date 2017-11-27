@@ -21,5 +21,9 @@ export class AgendaClientePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AgendaClientePage');
   }
-
+  public event = {
+    month: '2017-11-27',
+    timeStarts: '07:43',
+    timeEnds: '1990-02-20'
+  }
 }

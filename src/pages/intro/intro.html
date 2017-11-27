@@ -3,24 +3,20 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Loguin</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-slides pager>
+  <ion-list>
     
-      <ion-slide style="background-color: green">
-        <h2>Slide 1</h2>
-      </ion-slide>
+      <ion-item>
+        <ion-input type="text" placeholder="Nome"></ion-input>
+      </ion-item>
     
-      <ion-slide style="background-color: blue">
-        <h2>Slide 2</h2>
-      </ion-slide>
+      <ion-item>
+        <ion-input type="password" placeholder="Senha"></ion-input>
+      </ion-item>
     
-      <ion-slide style="background-color: red">
-        <h2>Slide 3</h2>
-      </ion-slide>
-    
-    </ion-slides>
+    </ion-list>
 </ion-content>

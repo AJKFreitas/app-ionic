@@ -11,6 +11,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class EmployerPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+  public employers: number[] = [1, 2, 3,4];
+
   public label:string = "Avaliação dos Usuários";
 
   ionViewDidLoad() {
